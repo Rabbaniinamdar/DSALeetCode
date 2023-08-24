@@ -48,6 +48,49 @@ public class TwoPointer {
         return arr1;
     }
 
+    // The removeElement function you've provided is designed to remove all
+    // occurrences of a specific value from an array while maintaining the order of
+    // other elements. Here's an explanation of the code:
+
+    // Two Pointers:
+
+    // The function uses two pointers, left and right, to traverse through the
+    // array. The left pointer will point to the next available position where a
+    // non-target value should be placed.
+    // Loop through the Array:
+
+    // The loop runs from the beginning to the end of the array using the right
+    // pointer.
+    // Comparison with Target:
+
+    // For each element at index right, the function checks if the element is not
+    // equal to the target value (val).
+    // Place Non-Target Elements:
+
+    // If the element is not equal to the target value, it means that it should be
+    // kept in the modified array. The element is then placed at the position
+    // pointed to by the left pointer.
+    // Increment Left Pointer:
+
+    // After placing the non-target element, the left pointer is incremented by one
+    // to point to the next available position for a non-target element.
+    // Return Length:
+
+    // After traversing the entire array, the value of left indicates the new length
+    // of the modified array, where all occurrences of the target value have been
+    // removed.
+    
+    public int removeElement(int[] nums, int val) {
+        int left = 0;
+        for (int right = 0; right < nums.length; right++) {
+            if (nums[right] != val) {
+                nums[left] = nums[right];
+                left++;
+            }
+        }
+        return left;
+    }
+
     public static void main(String[] args) {
         int[] arr1 = { 1, 2, 2, 0, 0, 0 };
         int[] arr2 = { 4, 5, 6 };

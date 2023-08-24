@@ -1,7 +1,7 @@
 class ProductArray {
     public static int[] ProductOfArray(int arr[]) {
 
-        for (int i = arr.length - 2; i >= 0; i--) {
+        for (int i = arr.length -2; i >= 0; i--) {
             // for (int i = 1; i < arr.length; i++) {
             arr[i] = arr[i + 1] * arr[i];
         }

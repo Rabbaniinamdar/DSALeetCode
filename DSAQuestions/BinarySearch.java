@@ -274,6 +274,8 @@ public class BinarySearch {
         return false;
     }
 
+    
+
     public static void main(String[] args) {
         int arr[] = { 1, 2, 5, 9 };
         System.out.println(smallestDivisor(arr, 5));

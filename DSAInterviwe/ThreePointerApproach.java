@@ -1,9 +1,11 @@
-// "The Dutch National Flag problem is a classic sorting problem where we are given an array containing only three distinct elements: 0, 1, and 2. 
+// "The Dutch National Flag problem 
+
+// is a classic sorting problem where we are given an array containing only three distinct elements: 0, 1, and 2. 
 // The task is to sort this array in non-decreasing order in linear time complexity without using any sorting algorithms.
 //  The solution to this problem is often called the 'Dutch National Flag algorithm'."
 
 // Initialization: We start with three pointers: low, mid, and high. Initially, low and mid both point to the beginning of the array, and high points to the end of the array.
-
+                                                                                                                                                                                                            
 // Partitioning:
 // As we traverse the array using the mid pointer, we compare the value at arr[mid]:
 // If it's 0, we swap the value at arr[low] with arr[mid], and increment both low and mid. This effectively moves the 0 to the left partition.
